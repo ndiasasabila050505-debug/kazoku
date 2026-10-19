@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>わたしのかぞく</title>
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box; font-family:"Meiryo",sans-serif;}
+        body {background:#fff; padding:30px 20px; line-height:2.2;}
+        .page {max-width:600px; margin:0 auto;}
+        h1 {text-align:center; margin-bottom:40px; font-size:26px; color:#2c3e50;}
+
+        .tree {display:flex; flex-direction:column; align-items:center; margin-bottom:50px;}
+        .row-top, .row-bottom {display:flex; justify-content:space-between; width:300px;}
+        .row-top {gap:30px; justify-content:center;}
+        .box {border:2px solid #333; padding:12px 15px; text-align:center; font-size:22px; font-weight:bold; background:#fefefe; min-width:110px;}
+        .box img {width:80px; height:80px; object-fit:cover; border-radius:50%; margin-bottom:8px; display:block; margin:0 auto 8px; border:2px solid #ddd;}
+        .line-h {width:30px; height:2px; background:#333;}
+        .line-v {width:2px; height:25px; background:#333; margin:0 auto;}
+        .branch {display:flex; justify-content:space-between; width:300px; position:relative;}
+        .branch::before {content:''; position:absolute; top:0; left:50%; width:2px; height:15px; background:#333;}
+        .branch-l, .branch-r {width:50%; height:2px; background:#333;}
+        .branch-l {margin-right:50%;}
+        .branch-r {margin-left:50%;}
+        .line-down {display:flex; justify-content:space-between; width:300px;}
+        .line-down div {width:2px; height:15px; background:#333;}
+        .row-bottom {margin-top:5px;}
+
+        .story {border-top:2px dashed #aaa; padding-top:30px;}
+        .sentence {margin:18px 0; padding:8px 12px; background:#f8f9fa; border-radius:8px;}
+        .jp {font-size:20px; color:#2c3e50; font-weight:bold;}
+        .romaji {font-size:15px; color:#7f8c8d; margin-left:10px;}
+        .id {font-size:14px; color:#27ae60; margin-left:10px;}
+    </style>
+</head>
+<body>
+<div class="page">
+    <h1>わたしのかぞく</h1>
+
+    <div class="tree">
+        <div class="row-top">
+            <div class="box">
+                <img src="foto chichi_3.jpg" alt="Ayah">
+                ちち
+            </div>
+            <div class="line-h"></div>
+            <div class="box">
+                <img src="foto haha_3.jpg" alt="Ibu">
+                はは
+            </div>
+        </div>
+        <div class="line-v"></div>
+        <div class="branch">
+            <div class="branch-l"></div>
+            <div class="branch-r"></div>
+        </div>
+        <div class="line-down">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="row-bottom">
+            <div class="box">
+                <img src="foto otouto.jpg" alt="Adik Laki-Laki">
+                あね
+            </div>
+            <div class="box">
+                <img src="foto watashi.jpg" alt="Saya">
+                わたし
+            </div>
+        </div>
+    </div>
+
+    <div class="story">
+        <div class="sentence">
+            <div class="jp">これはわたしのかぞくです。</div>
+            <div class="romaji">Kore wa watashi no kazoku desu.</div>
+            <div class="id">→ Ini keluarga saya.</div>
+        </div>
+        <div class="sentence">
+            <div class="jp">わたしのかぞくはよにんです。</div>
+            <div class="romaji">Watashi no kazoku wa yonnin desu.</div>
+            <div class="id">→ Keluarga saya beranggotakan 4 orang.</div>
+        </div>
+        <div class="sentence">
+            <div class="jp">わたしとちちとははとおとうとです。</div>
+            <div class="romaji">Watashi to chichi to haha to otouto desu.</div>
+            <div class="id">→ Anggotanya: saya, ayah, ibu, adik laki-laki.</div>
+        </div>
+        <div class="sentence">
+            <div class="jp">わたしはふたりきょうだいです。</div>
+            <div class="romaji">Watashi wa futari kyōudai desu.</div>
+            <div class="id">→ Kami bersaudara 2 orang.</div>
+        </div>
+        <div class="sentence">
+            <div class="jp">わたしはいちばんうえです。</div>
+            <div class="romaji">Watashi wa ichiban ue desu.</div>
+            <div class="id">→ Saya anak nomor satu.</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
